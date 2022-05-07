@@ -4,10 +4,12 @@ import styles from './Styles';
 
 function HomeScreen({navigation}) {
     return (
-        <View style={styles.container}>
-            <Text>Home</Text>
-            <Button title="Ir a Detalle" 
-                onPress={()=>navigation.navigate("Details")}
+        <View style={{justifyContent: "center", alignItems: "center"}}>
+            <Text style={{fontSize: 100}}>Home</Text>
+            <Button 
+            style={{top: 100}}
+            title="Menu" 
+                onPress={()=>navigation.navigate("Menu")}
             />
         </View>
     );
